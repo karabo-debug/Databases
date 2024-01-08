@@ -1,0 +1,1 @@
+SELECT city,phone FROM offices WHERE city="Paris" or city="London";

@@ -1,0 +1,1 @@
+SELECT DISTINCT customers.customerName,phone FROM customers,payments WHERE customers.customerNumber NOT IN (SELECT DISTINCT payments.customerNumber FROM payments);

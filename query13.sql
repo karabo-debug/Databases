@@ -1,0 +1,1 @@
+SELECT productName,quantityInStock as quantityInstock,textDescription from products,productlines WHERE products.productLine=productlines.productLines and quantityInStock < 100;

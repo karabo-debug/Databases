@@ -1,0 +1,2 @@
+SELECT ANY_VALUE(productCode) AS productCode,total FROM(SELECT productCode,SUM(quantityOrdered) AS total FROM orderdetails GROUP BY productCode) as table1
+WHERE total >= all(SELECT SUM(quantityOrdered) AS total FROM orderdetails GROUP BY productCode);
